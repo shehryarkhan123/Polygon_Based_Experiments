@@ -1,0 +1,68 @@
+[
+  {
+    "id": "A",
+    "name": "1x1 Transformer (centre of 3x3)",
+    "accuracy": 0.9421,
+    "balanced_accuracy": 0.9135,
+    "macro_f1": 0.8917,
+    "cpf_f1": 0.8020,
+    "sl_f1": 0.9113,
+    "n_test": 186474,
+    "note": "Same net as B; centre token only from the 3x3 patches"
+  },
+  {
+    "id": "B",
+    "name": "3x3 Transformer",
+    "accuracy": 0.9522,
+    "balanced_accuracy": 0.9170,
+    "macro_f1": 0.9164,
+    "cpf_f1": 0.7769,
+    "sl_f1": 0.8862,
+    "n_test": 186474,
+    "note": "Proposed spatial method; reused 4-band run_spatial.py"
+  },
+  {
+    "id": "C",
+    "name": "3x3 MLP",
+    "accuracy": 0.9348,
+    "balanced_accuracy": 0.9025,
+    "macro_f1": 0.8948,
+    "cpf_f1": 0.8015,
+    "sl_f1": 0.9037,
+    "n_test": 186474,
+    "note": "Flatten 9x4 then 36 to 64 to 5"
+  },
+  {
+    "id": "D",
+    "name": "3x3 CNN",
+    "accuracy": 0.9375,
+    "balanced_accuracy": 0.9058,
+    "macro_f1": 0.8989,
+    "cpf_f1": 0.7978,
+    "sl_f1": 0.9046,
+    "n_test": 186474,
+    "note": "2D CNN on (4, 3, 3); not the pixel 1D CNN"
+  },
+  {
+    "id": "E",
+    "name": "3x3 RF",
+    "accuracy": 0.9296,
+    "balanced_accuracy": 0.8729,
+    "macro_f1": 0.8835,
+    "cpf_f1": 0.7512,
+    "sl_f1": 0.8698,
+    "n_test": 186474,
+    "note": "3x3 RF on flattened 36 features; trees=200, depth=None by val macro F1"
+  },
+  {
+    "id": "W5",
+    "name": "5x5 Transformer",
+    "accuracy": 0.9680674347918287,
+    "balanced_accuracy": 0.9352535936429514,
+    "macro_f1": 0.932859401856463,
+    "cpf_f1": 0.8453167768208826,
+    "sl_f1": 0.9260107938613682,
+    "n_test": 169764,
+    "note": "Same Transformer; 25 tokens; own 5x5-kept pixels"
+  }
+]
