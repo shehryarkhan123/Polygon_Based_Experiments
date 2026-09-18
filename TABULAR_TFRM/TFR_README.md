@@ -1,4 +1,4 @@
-# FT-Transformer: 5-class land cover (7 features)
+# Tabular-Transformer: 5-class land cover (7 features)
 
 Small tabular transformer (FT-Transformer) on the same polygon splits as the CNN, Linear SVM, and Random Forest.
 
@@ -12,7 +12,7 @@ Small tabular transformer (FT-Transformer) on the same polygon splits as the CNN
 
 Re-run `python TABULAR_TFRM/run_tfr.py`. This file is rewritten at the end of that script.
 
-## Why FT-Transformer
+## Why Tabular-Transformer
 
 CNN looks at **neighboring** bands. Linear SVM is one straight split. RF mixes features with trees. An FT-Transformer lets **every feature attend to every other** (GNDVI can look at B4) without assuming band order. That is the point of this fourth model. Same full pixels. Same class weights. Still not biased by class size.
 
