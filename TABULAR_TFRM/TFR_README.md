@@ -16,7 +16,6 @@ Re-run `python TABULAR_TFRM/run_tfr.py`. This file is rewritten at the end of th
 
 CNN looks at **neighboring** bands. Linear SVM is one straight split. RF mixes features with trees. An FT-Transformer lets **every feature attend to every other** (GNDVI can look at B4) without assuming band order. That is the point of this fourth model. Same full pixels. Same class weights. Still not biased by class size.
 
-This is **not** TabTransformer. That model is for categorical columns. All 7 features here are numeric.
 
 ## Headline results
 
