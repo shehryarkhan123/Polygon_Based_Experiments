@@ -1,4 +1,4 @@
-# SUGARCANE VARIETIES POLYGON BASED 
+#  POLYGON BASED SUGARCANE VARIETIES CLASSIFICATION
 ###### CLASSIFICATION & ANALYSIS
 Polygon-based crop classification: split combined ENVI pixel CSVs (CPF 253 and SL 284) into individual field polygons with KMeans on lat/lon.
 
