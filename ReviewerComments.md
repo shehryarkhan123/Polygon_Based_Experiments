@@ -104,4 +104,4 @@ Using neighbours is **not** the novelty. Spatial windows are already used in EO 
 
 This work is a **3×3 token Transformer** for **sugarcane varieties** (CPF 253 vs SL 284 plus land cover), with windows built **inside polygons**. That is the contribution, not “we added spatial context”.
 
-On the **same 3×3 pixels** (section 5), a 2D CNN is slightly higher than the Transformer (test acc **0.9588** vs **0.9522**). Neighbours still help the Transformer vs centre-only (**0.9421** → **0.9522**). The extra from attention over a 3×3 CNN is small here.
+
