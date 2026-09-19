@@ -1,6 +1,6 @@
 # Reviewer comments
 
-## 2. Spatial data leakage and random pixel-wise splitting
+## 1. Spatial data leakage and random pixel-wise splitting
 
 Train, validate, and test are split by **whole polygons**, not random pixels. A field is only in one set. CNN, SVM, Random Forest, FT-Transformer, and the spatial transformer all use that split.
 
